@@ -1,5 +1,5 @@
 <script type="ts">
-  import type { AboutProps } from "../interfaces";
+  import type { AboutProps } from '../interfaces';
   export let props: AboutProps;
 </script>
 
@@ -10,11 +10,10 @@
 </article>
 
 <style lang="scss">
-  @import "../scss/framework";
+  @import '../scss/framework';
 
   article {
     width: 100%;
-
   }
   h2 {
     font-size: rem(20px);

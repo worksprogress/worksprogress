@@ -1,6 +1,6 @@
 <script type="ts">
-  import { link } from "svelte-spa-router";
-  import active from "svelte-spa-router/active";
+  import { link } from 'svelte-spa-router';
+  import active from 'svelte-spa-router/active';
 
   let opened = false;
   const toggleNav = () => {
@@ -26,13 +26,8 @@
       <a href="/about" use:link use:active on:click={closeOnClick}>About</a>
     </li>
     <li>
-      <a href="/architecture" use:link use:active on:click={closeOnClick}
-        >Architecture</a
-      >
-    </li>
-    <li>
-      <a href="/planning" use:link use:active on:click={closeOnClick}
-        >Planning</a
+      <a href="/projects" use:link use:active on:click={closeOnClick}
+        >Projects</a
       >
     </li>
     <li>
@@ -54,7 +49,7 @@
 </nav>
 
 <style lang="scss">
-  @import "../scss/framework";
+  @import '../scss/framework';
 
   :global(li a.active) {
     font-style: italic;

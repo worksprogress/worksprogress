@@ -1,6 +1,6 @@
 <script type="ts">
-  import AboutComponent from "../components/About.component.svelte";
-  import { store as state$ } from "../state/About.store";
+  import AboutComponent from '../components/About.component.svelte';
+  import { aboutStore as state$ } from '../state';
 
   state$.load();
 </script>
@@ -16,7 +16,7 @@
 </section>
 
 <style lang="scss">
-  @import "../scss/framework";
+  @import '../scss/framework';
 
   section {
     display: flex;

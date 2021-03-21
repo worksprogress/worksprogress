@@ -1,6 +1,6 @@
 <script type="ts">
-  import EducationComponent from "../components/Education.component.svelte";
-  import { store as state$ } from "../state/Educational.store";
+  import EducationComponent from '../components/Education.component.svelte';
+  import { educationStore as state$ } from '../state';
 
   state$.load();
 </script>
@@ -14,5 +14,5 @@
 </section>
 
 <style lang="scss">
-  @import "../scss/framework";
+  @import '../scss/framework';
 </style>
