@@ -1,13 +1,13 @@
 import { writable } from "svelte/store";
-import type { AboutProps } from "../interfaces";
+import type { EducationalProps } from "../interfaces";
 
-class AboutStore {
-  private write = writable([] as AboutProps[]);
+class EducationalStore {
+  private write = writable([] as EducationalProps[]);
   private update = this.write.update;
 
   private async fetchData() {
-    const req = await fetch("data/about.json");
-    const data: AboutProps[] = await req.json();
+    const req = await fetch("data/educational.json");
+    const data: EducationalProps[] = await req.json();
 
     this.write.set(data);
   }
@@ -27,4 +27,4 @@ class AboutStore {
   }
 }
 
-export const store = new AboutStore();
+export const store = new EducationalStore();

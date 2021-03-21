@@ -1,5 +1,4 @@
 <script type="ts">
-  import type { AboutProps } from "../interfaces";
   import AboutComponent from "../components/About.component.svelte";
   import { store as state$ } from "../state/About.store";
 
@@ -19,20 +18,22 @@
 <style lang="scss">
   @import "../scss/framework";
 
-  h1 {
-    font-size: rem(32px);
-    margin: rem(0 0 16px);
-  }
-
   section {
     display: flex;
     flex: 1;
     justify-content: space-between;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
   }
 
   .article-wrapper {
-    & + & {
-      margin-left: rem(24px);
+    @include breakpoint(md) {
+      & + & {
+        margin-left: rem(24px);
+      }
     }
   }
 </style>
