@@ -1,10 +1,10 @@
 <script type="ts">
-import type { EducationalProps } from '../interfaces';
+  import type { EducationalProps } from "../interfaces";
 
-  let props: EducationalProps;
+  export let props: EducationalProps;
 </script>
 
-{ props.content }
+<p>{props.content}</p>
 
 <style lang="scss">
   @import "../scss/framework";

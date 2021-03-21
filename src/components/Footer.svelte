@@ -1,4 +1,7 @@
-<footer>I am footer</footer>
+<script type="ts">
+  let date = new Date().getFullYear();
+</script>
+<footer>&copy; { date } WorksProgress LLC.</footer>
 
 <style lang="scss">
   @import "../scss/framework";
